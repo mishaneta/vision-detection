@@ -1,0 +1,5 @@
+.DS_Store
+venv/
+uploaded_videos/
+segmented_frames/
+output_frames/
