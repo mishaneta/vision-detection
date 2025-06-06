@@ -36,7 +36,7 @@ export default function DetectionMessages({
   };
 
   return (
-    <div className="h-96 bg-gray-800 rounded-lg overflow-hidden flex flex-col">
+    <div className="h-[400px] bg-gray-800 rounded-lg overflow-hidden flex flex-col">
       {/* Header */}
       <div className="bg-gray-700 px-4 py-3 border-b border-gray-600">
         <div className="flex items-center justify-between">

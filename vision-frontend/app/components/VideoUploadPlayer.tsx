@@ -78,6 +78,12 @@ export default function VideoUploadPlayer({
       console.log('❌ Missing video or canvas ref');
       return;
     }
+
+    // ✅ Prevent sending request if video is paused or ended
+    if (video.paused || video.ended) {
+      console.log('⏸️ Video is paused or ended — skipping analysis');
+      return;
+    }
     
     console.log('📊 Video state - paused:', video.paused, 'ended:', video.ended, 'currentTime:', video.currentTime);
     
@@ -269,7 +275,7 @@ export default function VideoUploadPlayer({
   // If no video uploaded, show upload interface
   if (!videoId) {
     return (
-      <div className="h-full bg-gray-800 rounded-lg flex items-center justify-center">
+      <div className="h-[400px] bg-gray-800 rounded-lg flex items-center justify-center">
         <div
           className="w-full max-w-md p-8 text-center"
           onDrop={handleDrop}
