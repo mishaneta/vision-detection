@@ -36,7 +36,7 @@ export default function Home() {
       {/* Header */}
       <header className="bg-gray-800 border-b border-gray-700 p-4">
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-2xl font-bold text-white">🎥 Real-time Video Analysis</h1>
+          <h1 className="text-xl font-bold text-white">Vision Inspector</h1>
           <p className="text-gray-400">
             Upload a video to see live object detection and scene descriptions
           </p>
