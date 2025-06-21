@@ -2,7 +2,7 @@
 
 A modern web application that provides real-time object detection and scene analysis for uploaded videos using YOLOv8 and computer vision.
 
-![Demo](./src/20250606_raybameta_lifelog.mov)
+![Demo](./src/image.png)
 
 ## ✨ Features
 
